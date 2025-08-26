@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Yashwanth 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #fbbf24, #9333ea, #3b82f6, #ef4444);
+      background-size: 800% 800%;
+      animation: gradientFlow 20s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientFlow {
+      0% {background-position:0% 50%}
+      50% {background-position:100% 50%}
+      100% {background-position:0% 50%}
+    }
+
+    h1, h2, h3 { font-weight: 800; text-align: center; }
+
+    /* Floating particles */
+    .particles span {
+      position: absolute;
+      width: 6px; height: 6px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 50%;
+      animation: floatUp 12s linear infinite;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      color: #fff;
+      text-shadow: 0 0 30px rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* Music Player */
+    .music-player {
+      position: fixed;
+      bottom: 30px; left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(20px);
+      border-radius: 50px;
+      padding: 15px 30px;
+      display: flex; align-items: center;
+      gap: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+    .music-player button {
+      width: 55px; height: 55px;
+      border-radius: 50%;
+      border: none;
+      background: #fbbf24;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(251,191,36,0.7);
+      transition: transform 0.3s;
+    }
+    .music-player button:hover { transform: scale(1.1); }
+    .waveform {
+      display: flex;
+      gap: 3px;
+    }
+    .waveform span {
+      width: 4px;
+      height: 15px;
+      background: #fff;
+      border-radius: 3px;
+      animation: wave 1.2s infinite ease-in-out;
+    }
+    .waveform span:nth-child(2) { animation-delay: 0.2s; }
+    .waveform span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes wave {
+      0%, 100% { transform: scaleY(0.5); }
+      50% { transform: scaleY(1.5); }
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 30px rgba(255,255,255,0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles">
+    <span style="left:5%; animation-delay:0s;"></span>
+    <span style="left:25%; animation-delay:2s;"></span>
+    <span style="left:45%; animation-delay:4s;"></span>
+    <span style="left:65%; animation-delay:1s;"></span>
+    <span style="left:85%; animation-delay:3s;"></span>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Happy Birthday Yashwanth 🎂</h1>
+    <h2>May this year bring you happiness, health, and success in every step you take ✨</h2>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Memories 📸</h2>
+    <div class="gallery">
+      <img src="https://drive.google.com/file/d/1VKUgyZXMXh_tp6FQmj9xpMgVP6QdKRX3/view?usp=drivesdk" alt="Yashwanth 1">
+      <img src="photo2.jpg" alt="Yashwanth 2">
+      <img src="photo3.jpg" alt="Yashwanth 3">
+      <img src="photo4.jpg" alt="Yashwanth 4">
+    </div>
+  </section>
+
+  <!-- Message -->
+  <section>
+    <h2>From the Heart 💌</h2>
+    <p style="margin-top:20px; font-size:1.2rem; line-height:1.7;">
+      Yashwanth, today we celebrate YOU — the laughter you bring, the kindness you share,  
+      and the bright future ahead of you. Keep shining always 🌟  
+      Wishing you endless joy, love, and success.  
+    </p>
+  </section>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <button id="playBtn">▶</button>
+    <div class="waveform">
+      <span></span><span></span><span></span>
+    </div>
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 | Crafted with ❤️ for Yashwanth  
+  </footer>
+
+  <script>
+    const playBtn = document.getElementById("playBtn");
+    const bgMusic = document.getElementById("bgMusic");
+
+    playBtn.addEventListener("click", () => {
+      if (bgMusic.paused) {
+        bgMusic.play();
+        playBtn.textContent = "⏸";
+      } else {
+        bgMusic.pause();
+        playBtn.textContent = "▶";
+      }
+    });
+  </script>
+
+</body>
+</html>
